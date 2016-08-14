@@ -44,14 +44,14 @@ Context::~Context()
 
 void Context::addJump(uint32 adress)
 {
-	assert(jumpCounter > JUMP_TABLE_SIZE - 1);
+//	assert(jumpCounter > JUMP_TABLE_SIZE - 1);
 	jumpTable[jumpCounter] = adress;
 	jumpCounter++;
 }
 
 void Context::addCall(uint32 adress)
 {
-	assert(callCounter > CALL_TABLE_SIZE - 1);
+//	assert(callCounter > CALL_TABLE_SIZE - 1);
 	callTable[callCounter] = adress;
 	callCounter++;
 }
