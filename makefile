@@ -17,6 +17,7 @@
 
 PROC=hexagon
 ADDITIONAL_GOALS=config
+O1=context
 
 include ../module.mak
 
@@ -60,7 +61,7 @@ $(F)reg$(O)     : $(I)area.hpp $(I)auto.hpp $(I)bitrange.hpp $(I)bytes.hpp   \
 	          $(I)name.hpp $(I)netnode.hpp $(I)offset.hpp $(I)pro.h     \
 	          $(I)queue.hpp $(I)segment.hpp $(I)srarea.hpp $(I)ua.hpp   \
 	          $(I)xref.hpp ../idaidp.hpp hexagon.hpp ins.hpp reg.cpp
-$(F)context$(O)  : $(I)area.hpp $(I)auto.hpp $(I)bitrange.hpp $(I)bytes.hpp   \
+context$(O)  : $(I)area.hpp $(I)auto.hpp $(I)bitrange.hpp $(I)bytes.hpp   \
 	          $(I)diskio.hpp $(I)fpro.h $(I)frame.hpp $(I)funcs.hpp     \
 	          $(I)ida.hpp $(I)idp.hpp $(I)ieee.h $(I)kernwin.hpp        \
 	          $(I)lines.hpp $(I)llong.hpp $(I)loader.hpp $(I)nalt.hpp   \
