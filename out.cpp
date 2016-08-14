@@ -2366,6 +2366,8 @@ bool idaapi outop(op_t & op)
 		out_line("op?", COLOR_REG);
 		break;
 	}
+	
+	return true;
 }
 
 void idaapi header(void)
